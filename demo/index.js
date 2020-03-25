@@ -40,7 +40,7 @@ const windFiles = {
 const meta = {
     '2016-11-20+h': 0,
     'retina resolution': true,
-    'github.com/mapbox/webgl-wind': function () {
+    'NorthernUtopia': function () {
         window.location = 'https://github.com/mapbox/webgl-wind';
     }
 };
@@ -48,7 +48,7 @@ gui.add(meta, '2016-11-20+h', 0, 48, 6).onFinishChange(updateWind);
 if (pxRatio !== 1) {
     gui.add(meta, 'retina resolution').onFinishChange(updateRetina);
 }
-gui.add(meta, 'github.com/mapbox/webgl-wind');
+gui.add(meta, 'NorthernUtopia');
 updateWind(0);
 updateRetina();
 
